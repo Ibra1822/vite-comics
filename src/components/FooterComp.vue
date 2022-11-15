@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <footer>
+  <div class="foot-j">
     <div class="cont-foot">
       <div class="list">
         <div class="list-l">
@@ -54,13 +54,13 @@ export default {
           </ul>
         </div>
       </div>
-
       <div class="img-foot">
         <img src="../assets/img/dc-logo-bg.png" alt="" />
       </div>
     </div>
-  </footer>
-  <div class="foot">
+  </div>
+
+  <footer>
     <div class="final-foot">
       <div class="cont-btn-foot">
         <a href="#">SIGN-UP-NOW!</a>
@@ -76,14 +76,14 @@ export default {
         <a href=""><img src="../assets/img/footer-periscope.png" alt="" /></a>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/varibles" as *;
 @use "../styles/mixin" as *;
 
-footer {
+.foot-j {
   width: 100%;
   background-image: url(../assets/img/footer-bg.jpg);
   background-size: cover;
@@ -129,7 +129,7 @@ footer {
     }
   }
 }
-.foot {
+footer {
   height: 100px;
   width: 100%;
   background-color: #303030;
