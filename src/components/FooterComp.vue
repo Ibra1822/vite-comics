@@ -3,7 +3,6 @@ export default {
 name:'FooterComp',
 data(){
   return{
-   
   }
 }
 
@@ -78,11 +77,13 @@ data(){
 
       <div class="cont-social-foot">
 
-        <img src="../assets/img/footer-facebook.png" alt="">
-        <img src="../assets/img/footer-twitter.png" alt="">
-        <img src="../assets/img/footer-youtube.png" alt="">
-        <img src="../assets/img/footer-pinterest.png" alt="">
-        <img src="../assets/img/footer-periscope.png" alt="">
+        <h3>Follow Us</h3>
+
+       <a href=""><img src="../assets/img/footer-facebook.png" alt=""></a> 
+       <a href=""><img src="../assets/img/footer-twitter.png" alt=""></a>   
+       <a href=""><img src="../assets/img/footer-youtube.png" alt=""></a>  
+       <a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a>   
+       <a href=""><img src="../assets/img/footer-periscope.png" alt=""></a>   
         
 
       </div>
@@ -97,6 +98,8 @@ data(){
 
 <style lang="scss" scoped>
 @use '../styles/varibles' as *;
+@use '../styles/mixin' as *;
+
 footer{
   height: 400px;
   width: 100%;
@@ -163,7 +166,12 @@ footer{
     }
   }
    .cont-social-foot{
-    display: flex;
+    @include lowFlex;
+    h3{
+      color: $primary-color;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
     img{
       margin: 0px 10px;
     }

@@ -91,6 +91,7 @@ getImg(imgName){
 
 <style lang="scss" scoped>
 @use '../styles/varibles' as *;
+@use '../styles/mixin' as *;
 
 .active{
   border-bottom: 3px solid $primary-color;
@@ -99,14 +100,11 @@ getImg(imgName){
 header{
   height: 120px;
   width: 100%;
-  display: flex;
-  align-items: center;
+ @include lowFlex;
   .cont-all{
     width: 70%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include advancedFlex;
     img{
       height: 70px;
     }
@@ -114,19 +112,19 @@ header{
 
   .cont-link{
     ul{
-      display: flex;
+      @include baseFlex;
       list-style: none;
       li{
         margin: 0 10px;
         a{
           color: black;
           text-decoration: none;
-          font-weight: 600;
+          font-weight: 500;
           padding: 49px 0px;
+          text-transform: uppercase;
           &:hover{
             color: $primary-color;
-     
-
+    
           }
         }
       }

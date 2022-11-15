@@ -1,0 +1,21 @@
+@mixin baseFlex {
+  display: flex;
+}
+
+@mixin lowFlex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin mediumFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin advancedFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
