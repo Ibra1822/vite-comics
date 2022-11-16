@@ -9,53 +9,52 @@ export default {
 
 <template>
   <div class="foot-j">
-    <div class="cont-foot">
-      <div class="list">
-        <div class="list-l">
-          <h3>Dc Comics</h3>
-          <ul>
-            <li><a href="#">Charcaters</a></li>
-            <li><a href="#">Comics</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Tv</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">News</a></li>
-          </ul>
-          <h3>Shop</h3>
-          <ul>
-            <li><a href="#">Shop Dc</a></li>
-            <li><a href="#">Shop Dc Collectibles</a></li>
-          </ul>
+    <div class="dc-logo-bg">
+      <div class="cont-foot">
+        <div class="list">
+          <div class="list-l">
+            <h3>Dc Comics</h3>
+            <ul>
+              <li><a href="#">Charcaters</a></li>
+              <li><a href="#">Comics</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">Tv</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+            <h3>Shop</h3>
+            <ul>
+              <li><a href="#">Shop Dc</a></li>
+              <li><a href="#">Shop Dc Collectibles</a></li>
+            </ul>
+          </div>
+          <div class="list-c">
+            <h3>DC</h3>
+            <ul>
+              <li><a href="#">Terms Of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Ad Choices</a></li>
+              <li><a href="#">Adversting</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Subscription</a></li>
+              <li><a href="#">Talent WorkShops</a></li>
+              <li><a href="#">CPSC Certificates</a></li>
+              <li><a href="#">Ratings</a></li>
+              <li><a href="#">ShopHelp</a></li>
+            </ul>
+          </div>
+          <div class="list-r">
+            <h3>SITES</h3>
+            <ul>
+              <li><a href="#">DC</a></li>
+              <li><a href="#">MAD Magazine</a></li>
+              <li><a href="#">DC Kids</a></li>
+              <li><a href="#">DC Universe</a></li>
+              <li><a href="#">DC Power Visa</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="list-c">
-          <h3>DC</h3>
-          <ul>
-            <li><a href="#">Terms Of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Ad Choices</a></li>
-            <li><a href="#">Adversting</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Subscription</a></li>
-            <li><a href="#">Talent WorkShops</a></li>
-            <li><a href="#">CPSC Certificates</a></li>
-            <li><a href="#">Ratings</a></li>
-            <li><a href="#">ShopHelp</a></li>
-          </ul>
-        </div>
-        <div class="list-r">
-          <h3>SITES</h3>
-          <ul>
-            <li><a href="#">DC</a></li>
-            <li><a href="#">MAD Magazine</a></li>
-            <li><a href="#">DC Kids</a></li>
-            <li><a href="#">DC Universe</a></li>
-            <li><a href="#">DC Power Visa</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="img-foot">
-        <img src="../assets/img/dc-logo-bg.png" alt="" />
       </div>
     </div>
   </div>
@@ -95,7 +94,6 @@ export default {
     margin: auto;
     display: flex;
     justify-content: space-between;
-
     .list {
       display: flex;
       .list-l,
@@ -121,14 +119,17 @@ export default {
         }
       }
     }
-    .img-foot {
-      img {
-        height: 100%;
-        margin-top: -40px;
-      }
-    }
   }
 }
+.dc-logo-bg {
+  background-image: url(../assets/img/dc-logo-bg.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right 15% bottom 66%;
+  background-size: 500px;
+}
+
 footer {
   height: 100px;
   width: 100%;

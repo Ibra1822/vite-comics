@@ -1,3 +1,5 @@
+@use "./varibles" as *;
+
 @mixin baseFlex {
   display: flex;
 }
@@ -18,4 +20,14 @@
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+}
+
+@mixin myButton {
+  padding: 10px 55px;
+  border: 0px;
+  color: #fff;
+  background-color: $primary-color;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
 }

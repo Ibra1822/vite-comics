@@ -25,6 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/varibles" as *;
+@use "../styles/mixin" as *;
 
 main {
   max-width: 100%;
@@ -38,13 +39,7 @@ main {
     padding: 20px;
     button {
       margin: 30px auto;
-      padding: 10px 55px;
-      border: 0px;
-      color: #fff;
-      background-color: $primary-color;
-      font-weight: 500;
-      text-transform: uppercase;
-      cursor: pointer;
+      @include myButton;
     }
     h2 {
       color: white;

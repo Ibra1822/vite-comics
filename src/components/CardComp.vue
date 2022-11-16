@@ -2,7 +2,7 @@
 export default {
   name: "CardComp",
   props: {
-    ogt: Object,
+    ogt: Array,
   },
 };
 </script>
