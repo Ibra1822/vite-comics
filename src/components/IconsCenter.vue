@@ -39,7 +39,7 @@ export default {
   <div class="cont-icons">
     <ul>
       <li v-for="(item, index) in ogt" :key="index" class="item-blue">
-        <a href="">
+        <a href="#">
           <img :src="getImg(item.img)" :alt="item.desc" />
           <h5>{{ item.desc }}</h5>
         </a>

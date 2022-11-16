@@ -69,11 +69,11 @@ export default {
       <div class="cont-social-foot">
         <h3>Follow Us</h3>
 
-        <a href=""><img src="../assets/img/footer-facebook.png" alt="" /></a>
-        <a href=""><img src="../assets/img/footer-twitter.png" alt="" /></a>
-        <a href=""><img src="../assets/img/footer-youtube.png" alt="" /></a>
-        <a href=""><img src="../assets/img/footer-pinterest.png" alt="" /></a>
-        <a href=""><img src="../assets/img/footer-periscope.png" alt="" /></a>
+        <a href="#"><img src="../assets/img/footer-facebook.png" alt="" /></a>
+        <a href="#"><img src="../assets/img/footer-twitter.png" alt="" /></a>
+        <a href="#"><img src="../assets/img/footer-youtube.png" alt="" /></a>
+        <a href="#"><img src="../assets/img/footer-pinterest.png" alt="" /></a>
+        <a href="#"><img src="../assets/img/footer-periscope.png" alt="" /></a>
       </div>
     </div>
   </footer>

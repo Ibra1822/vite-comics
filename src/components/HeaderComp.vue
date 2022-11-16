@@ -120,7 +120,7 @@ header {
           color: black;
           text-decoration: none;
           font-weight: 500;
-          padding: 49px 0px;
+          padding: 47px 0px;
           text-transform: uppercase;
           &:hover {
             color: $primary-color;

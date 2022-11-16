@@ -1,35 +1,54 @@
 <script>
+import CardComp from "./CardComp.vue";
+import arrayComp from "../data/Array";
 export default {
-name:'MainComp'
-}
+  name: "MainComp",
+  components: {
+    CardComp,
+  },
+  data() {
+    return {
+      arrayComp,
+    };
+  },
+};
 </script>
 
 <template>
-<main>
-  <div class="content">
-    <h2>Content Goes Here</h2>
-  </div>
-</main>
-
-
-</template> 
+  <main>
+    <div class="content">
+      <CardComp v-for="(item, index) in arrayComp" :key="index" :ogt="item" />
+      <button>Load More</button>
+    </div>
+  </main>
+</template>
 
 <style lang="scss" scoped>
-@use '../styles/varibles' as *;
+@use "../styles/varibles" as *;
 
-main{
+main {
   max-width: 100%;
-  background-color: #1C1C1C; 
- .content{
-height: 120px;
-width: 70%;
-display: flex;
-align-items: center;
-margin: auto;
-h2{
-  color: white;
+  background-color: #1c1c1c;
+  .content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 20px;
+    button {
+      margin: 30px auto;
+      padding: 10px 55px;
+      border: 0px;
+      color: #fff;
+      background-color: $primary-color;
+      font-weight: 500;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    h2 {
+      color: white;
+    }
+  }
 }
-} 
-}
-
 </style>
